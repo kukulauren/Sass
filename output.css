@@ -1,0 +1,51 @@
+.header {
+  background-color: black;
+  color: white;
+}
+
+.text-primary {
+  color: "blue";
+}
+
+.bg-primary {
+  background-color: "blue";
+  color: "black";
+}
+
+.border-primary {
+  border-color: "blue";
+  color: "black";
+}
+
+.navbar:hover {
+  box-shadow: 0 0 10px;
+}
+.navbar .nav-brand {
+  color: "blue";
+}
+.navbar .nav-item {
+  border: 1px solid black;
+}
+.navbar .nav-item .nav-link {
+  color: "black";
+}
+.navbar .nav-item .nav-link:hover, .navbar .nav-item .nav-link.active {
+  background-color: "blue";
+  color: white;
+}
+
+.btn-primary {
+  background-color: blanchedalmond;
+  color: "black";
+  padding: 3px;
+  border: 2px solid "black";
+}
+
+.btn-secondary {
+  background-color: blanchedalmond;
+  color: "darkblue";
+  padding: 3px;
+  border: 2px solid "darkblue";
+}
+
+/*# sourceMappingURL=output.css.map */

@@ -1,0 +1,47 @@
+@import "header";
+$primary:"blue";
+$text-primary:"black";
+.text-primary{
+    color: $primary;
+}
+.bg-primary{
+    background-color: $primary;
+    color: $text-primary;
+}
+.border-primary{
+    border-color: $primary;
+    color: $text-primary;
+
+}
+// nesting
+.navbar{
+    &:hover{
+        box-shadow: 0 0 10px;
+    }
+    .nav-brand{
+        color: $primary;
+    }
+        .nav-item{
+            border: 1px solid black;
+            .nav-link{
+                color: $text-primary;
+                &:hover,&.active{
+                        background-color: $primary;
+                        color: white;
+                    }
+                }
+            }
+            
+        }
+        @mixin btn ($theme: "black") {
+            background-color: blanchedalmond;
+            color: $theme;
+            padding: 3px;
+            border: 2px solid $theme;
+        }
+        .btn-primary{
+            @include btn();
+        }
+        .btn-secondary{
+            @include btn("darkblue")
+        }
